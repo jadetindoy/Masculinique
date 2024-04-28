@@ -54,8 +54,7 @@ body {
     color: black;
     padding: 15% ; 
     padding-top: 150px;
-
-
+    padding-left: 180px;ss
 }
 
 .hero-content {
@@ -64,24 +63,38 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 48px;
     margin-bottom: start;
+    margin-bottom: 5px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+
 }
 
 .btn {
     display: inline-block;
     background-color: #2C1ECA;
     color: #ffffff;
-    padding: 10px 20px;
+    width: 179px;
+    height: 53px;
+    flex-shrink: 0;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: background-color 0.3s ease;
+    text-align: center; 
+    line-height: 53px; 
+    font-weight: 700;
+    font-size: 20px;
 }
+
 
 .btn:hover {
     background-color: black;
@@ -92,4 +105,8 @@ body {
 .frontimage img {
     width: 600px; 
     height: 600px;
+}
+.highlight {
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
 }
