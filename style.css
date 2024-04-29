@@ -54,7 +54,8 @@ body {
     color: black;
     padding: 15% ; 
     padding-top: 150px;
-    padding-left: 180px;ss
+    padding-left: 180px;
+    padding-bottom: 0px;
 }
 
 .hero-content {
@@ -109,4 +110,59 @@ body {
 .highlight {
     font-family: "comfortaa", sans-serif;
     color: #25297D;
+}
+
+/* info */
+
+.info {
+    display: flex;
+    align-items: center; 
+    background: white;
+    color: black;
+    padding: 15% ; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.info-image img {
+    width: 600px;
+    height: auto;
+}
+.info-content {
+    padding-right: 100px;
+}
+.info-content h1 {
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
+    font-size: 36px;
+    padding-bottom: 5px;
+}
+.info-content p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.44px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.btn-1 {
+    display: inline-block;
+    background-color: #2C1ECA;
+    color: #ffffff;
+    width: 179px;
+    height: 53px;
+    flex-shrink: 0;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+    line-height: 53px; 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.btn-1:hover {
+    background-color: black;
 }
