@@ -259,3 +259,4 @@ body {
     line-height: normal;
     letter-spacing: -0.48px;
 }
+@media only screen and (max-width: 600px)
