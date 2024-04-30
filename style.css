@@ -271,4 +271,44 @@ body {
     height: auto;
 }
 
+/*---location --*/
+.location {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+  }
+  
+  .location-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0.53) 100%), url(./src/location.png) lightgray 0px -945px / 100% 293.173% no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .address {
+    position: relative;
+    text-align: center; 
+    padding-top: 20px;
+  }
+  .address h1 {
+    font-family: "comfortaa", sans-serif;
+    color: white;
+    font-size: 48px;
+  }
+  
+  .location-dropdown {
+    margin-top: 10px; 
+    width: 261px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #FFF
+  }
+  
 @media only screen and (max-width: 600px) 
