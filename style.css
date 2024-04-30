@@ -310,5 +310,14 @@ body {
     border-radius: 2px;
     background: #FFF;
   }
-  
+  .location-dropdown option {
+    padding: auto;
+  }
+  .address .btn {
+    width: 120px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #2C1ECA;
+  }
 @media only screen and (max-width: 600px) 
