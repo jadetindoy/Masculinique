@@ -228,7 +228,7 @@ body {
     height: 592px;
     object-fit: cover;
     flex-shrink: 0;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
 .overlay {
@@ -259,4 +259,16 @@ body {
     line-height: normal;
     letter-spacing: -0.48px;
 }
-@media only screen and (max-width: 600px)
+
+/*--- CHOOSE --*/
+.choose {
+    display: flex;
+    align-items: center; 
+    background: #FDDEBA;  
+}
+.choose-image img {
+    width: 600px;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) 
