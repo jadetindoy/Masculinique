@@ -270,6 +270,24 @@ body {
     width: 600px;
     height: auto;
 }
+.choose-content {
+    padding-right: 80px;
+
+}
+.choose-content h1 {
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
+    font-size: 48px;
+    padding-bottom: 5px;
+}
+.choose-content p {
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
 
 /*---location --*/
 .location {
@@ -322,10 +340,38 @@ body {
   }
 
   /*---footer --*/
-  .footer {
+  footer {
     background: linear-gradient(180deg, #DEF0F5 0%, #FDDEBA 100%);
-    padding: 20px; /* Add padding for spacing */
-    padding-top: 400px;
+    text-align: left;
+    padding: 20px; 
+    padding-top: 200px;
   }
+.footer-info {
+    display: flex;
+    justify-content: center;            
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.column {
+    width: 20%;
+    float: left;
+    padding: 0 20px;
+}
+.column h1 {
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
+    padding-bottom: 5px;
+}
+.column i{
+    color: #25297D;
+
+}
+.column .sample{
+    font-family: "comfortaa", sans-serif;
+    padding-bottom: 10px;
+}
+.column a {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) 
