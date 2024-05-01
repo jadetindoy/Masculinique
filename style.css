@@ -320,4 +320,12 @@ body {
     border-radius: 2px;
     background: #2C1ECA;
   }
+
+  /*---footer --*/
+  .footer {
+    background: linear-gradient(180deg, #DEF0F5 0%, #FDDEBA 100%);
+    padding: 20px; /* Add padding for spacing */
+    padding-top: 400px;
+  }
+
 @media only screen and (max-width: 600px) 
