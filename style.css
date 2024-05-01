@@ -372,6 +372,33 @@ body {
 }
 .column a {
     text-decoration: none;
+    color: black;
 }
+.column li {
+    padding-top: 5px;
+    position: relative; /* Add relative positioning to the list items */
+}
+
+.column li::before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Position the pseudo-element at the bottom */
+    left: 0;
+    width: 20%; /* Set the width to 100% to span the entire width of the list item */
+    height: 2px; /* Set the height of the underline */
+    background: black;
+    transition: width 0.3s ease; /* Add transition effect to the width property */
+    transform: scaleX(0); /* Initially set the width to zero */
+}
+
+.column li:hover::before {
+    width: 10%; /*It expand the width on hover */
+    transform: scaleX(1); /* Scale the width to 100% on hover */
+}
+
+.column p {
+    padding-top: 5px;
+}
+
 
 @media only screen and (max-width: 600px) 
