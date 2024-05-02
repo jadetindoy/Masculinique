@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -566,10 +567,46 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     width: 500px;
-\
 }
 .product-listing p {
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 600px) {
+    /* Styles for phones */
+    .header {
+        padding: 20px; 
+    }
+    .navbar a {
+        margin-left: 20px;
+    }
+    .hero {
+        padding: 10% 20px; 
+    }
+    .hero2 {
+        padding: 10% 20px; 
+    }
+    .product-listing {
+        padding: auto;
+
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .header {
+        padding: 50px; 
+    }
+    .navbar a {
+        margin-left: 30px; 
+    }
+    .hero {
+        padding: 10% 50px; /
+    }
+    .hero2 {
+        padding: 10% 50px;
+    }
+    .product-listing {
+        padding: auto;
+    }
+}
