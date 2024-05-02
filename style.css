@@ -522,4 +522,24 @@ body {
 }
 
 
+/*Product area*/
+.product-here {
+    display: flex;
+    align-items: center; 
+    color: black;
+    padding: 15% ; 
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-right: 260px;
+}
+.prodimage img{
+    width: 556.616px;
+    height: 431.142px;
+    flex-shrink: 0;
+}
+.product-content h1 {
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
+    font-size: 28px;
+}
 @media only screen and (max-width: 600px) 
