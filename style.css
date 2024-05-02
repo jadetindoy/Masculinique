@@ -533,9 +533,8 @@ body {
     padding-right: 260px;
 }
 .prodimage img{
-    width: 556.616px;
+    width: 566.616px;
     height: 431.142px;
-    flex-shrink: 0;
 }
 .product-content h1 {
     font-family: "comfortaa", sans-serif;
@@ -567,6 +566,10 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     width: 500px;
+\
+}
+.product-listing p {
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) 
