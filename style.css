@@ -542,4 +542,31 @@ body {
     color: #25297D;
     font-size: 28px;
 }
+
+/*Product-listing*/
+
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product-listing img {
+    width: 300px;
+    height: auto;
+}
+.listing h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-listing {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 500px;
+}
+
 @media only screen and (max-width: 600px) 
