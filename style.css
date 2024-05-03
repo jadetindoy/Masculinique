@@ -331,6 +331,15 @@ body {
     padding-top: 100px;
 }
 
+.image2-section {
+    display: flex;
+    flex-wrap: wrap; /* Wrap image cntainers onto multiple lines */
+    justify-content: space-between; /* Center items horizontaly */
+    background: white;
+    padding: 20px; /* Add padding for spacing */
+    padding-top: 100px;
+}
+
 .services-heading {
     width: 100%; /* Ensure full width for the heading */
     text-align: center; /* Center the heading text */
@@ -361,6 +370,13 @@ body {
     box-sizing: border-box;
     margin: 15px 150px 0 0;
 }
+
+.services{
+    display:flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
 .services-heading {
     padding-bottom: 80px;
 }
