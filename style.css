@@ -228,16 +228,21 @@ body {
     display: flex;
     text-align: left;
     color: rgba(0, 0, 0, 0.64);
-    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
-    letter-spacing: -1.44px;
     padding-bottom: 50px;
     padding-top: 10px;
     flex-direction: row;
     align-items: flex-start;
     gap: 30px
+}
+.card p{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
 }
 
 .card-text2{
