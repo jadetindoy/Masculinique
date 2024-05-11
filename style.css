@@ -12,7 +12,7 @@ body {
     background: linear-gradient(120deg, #DEF0F5 8.7%, #FDDEBA 113.57%);
 }
 .header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -63,12 +63,25 @@ body {
 .navbar a:hover::before {
     width: 100%;
 }
+/*--login--*/
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Aligns text center within the flex container */
+  }
+  
+  .modal-header .modal-title {
+    flex: 1; /* Allows the title to take up remaining space */
+    font-size: 25px;
+  }
+  
 .hero {
     display: flex;
     align-items: center; 
     color: black;
-    padding: 15% ; 
-    padding-top: 150px;
+    padding: 10% ; 
+    padding-top: 0px;
     padding-left: 180px;
     padding-bottom: 0px;
 }
@@ -124,26 +137,6 @@ body {
     margin-bottom: 40px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #2C1ECA;
-    color: #ffffff;
-    width: 179px;
-    height: 53px;
-    flex-shrink: 0;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: background-color 0.3s ease;
-    text-align: center; 
-    line-height: 53px; 
-    font-weight: 700;
-    font-size: 20px;
-}
-
-
-.btn:hover {
-    background-color: black;
-}
 .frontimage {
     flex: 0 0 auto;
 }
