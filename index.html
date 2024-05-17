@@ -18,19 +18,29 @@
         <div class="logo-section">
             <a href="#" class="logo">Masculinique</a>
         </div>
-        <div class="nav-section">
-            <nav class="navbar">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./services.html">Services</a>
-                <a href="./products.html">Products</a>
-            </nav>
-        </div>
-        <div class="login-section">
-            <i class="bi bi-cart"></i>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Login
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+                </ul>
+                <div class="login-section">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
             
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -74,8 +84,9 @@
                 </div>
             </div>
         </div>
-
-    </header>
+    </div>
+</nav>
+</header>
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to <span class="highlight">Masculinique</span></h1>
@@ -134,7 +145,6 @@
                 premier cosmetic clinic specializes in providing tailored 
                 aesthetic treatments designed specifically for the 
                 modern gentleman.</p>
-            <a href="services.html" class="btn-1">Book Now</a>
         </div>
         <div class="info-image">
             <img src="./src/infoimage.jpg" alt="">
@@ -159,38 +169,39 @@
         <div class="services-heading">
             <h1>Our Services</h1>
         </div>
-        <div class="image-container">
-            <img src="./src/image1.jpg" alt="skin Rejuvenation">
-            <div class="overlay">
-                <h2>Skin Rejuvenation</h2>
-                <p>Restore vitality and youthfulness to 
-                    your skin with our selection of 
-                    revitalizing procedures, including 
-                    laser therapy, chemical peels, and
-                     microdermabrasion.</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="./src/image2.jpg" alt="Facial Sculpting">
-            <div class="overlay">
-                <h2>Facial Sculpting</h2>
-                <p>Define your jawline, enhance 
-                    cheekbones, and achieve a chiseled
-                    appearance with our advanced facial 
-                    contouring techniques.</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="./src/image3.jpg" alt="Body Contouring">
-            <div class="overlay">
-                <h2>Body Contouring</h2>
-                <p>Refine your physique and achieve 
-                    your ideal body shape with our 
-                    non-invasive body sculpting 
-                    procedures.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./src/image1.jpg" class="card-img-top" alt="Skin Rejuvenation">
+                        <div class="card-body">
+                            <h5 class="card-title">Skin Rejuvenation</h5>
+                            <p class="card-text">Restore vitality and youthfulness to your skin with our selection of revitalizing procedures, including laser therapy, chemical peels, and microdermabrasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./src/image2.jpg" class="card-img-top" alt="Facial Sculpting">
+                        <div class="card-body">
+                            <h5 class="card-title">Facial Sculpting</h5>
+                            <p class="card-text">Define your jawline, enhance cheekbones, and achieve a chiseled appearance with our advanced facial contouring techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./src/image3.jpg" class="card-img-top" alt="Body Contouring">
+                        <div class="card-body">
+                            <h5 class="card-title">Body Contouring</h5>
+                            <p class="card-text">Refine your physique and achieve your ideal body shape with our non-invasive body sculpting procedures.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
     <section class="choose">
         <div class="choose-image">
             <img src="./src/OIG1.png" alt="choosemodel">
@@ -208,17 +219,25 @@
         </div>
     </section>
     <section class="location">
-        <div class="location-background">
-        </div>
-        <div class="address">
-            <h1>Check our nearest Location</h1>
-            <select class="location-dropdown">
-                <option value="location1">SM Mall of Asia</option>
-                <option value="location2">SM Makati</option>
-            </select>
-            <a href="services.html" class="btn">Book Now</a>
+        <div class="location-background"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="address">
+                        <h1>Check our nearest Location</h1>
+                        <div class="d-flex align-items-center">
+                            <select class="form-select location-dropdown">
+                                <option value="location1">SM Mall of Asia</option>
+                                <option value="location2">SM Makati</option>
+                            </select>
+                            <a href="services.html" class="btn btn-primary mt-3 mt-md-1 ms-md-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
 <footer class="footer-info">
     <div class="column">
         <h1>Masculinique</h1>
