@@ -269,6 +269,11 @@ body{
     color: #25297D;
 
 }
+.foot-logo h1 {
+    font-family: "comfortaa", sans-serif;
+    font-size: 42px;
+    color: #25297D;
+}
 @media(max-width: 991px) {
     .sidebar{
         background-color: rgba(35, 22, 6, 0.282);
