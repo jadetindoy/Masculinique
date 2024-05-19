@@ -2,29 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="clinic, masculinque, skincare, facial">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Masculinique   </title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-section">
-            <a href="#" class="logo">Masculinique</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="#">Masculinique</a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>          
+            </button>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!--sidebar header --->
+                <div class="offcanvas-header text-black border-bottom">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!--sidebar-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link" href="./products.html">Products</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <a href="./login.html" class="text-black text-decoration-none px-3 py-1 bg-primary rounded-2">Login</a>
+                        <a href="./signup.html" class="btn btn-outline-dark text-black text-decoration-none px-3 py-1 rounded-2">Sign-up</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="nav-section">
-            <nav class="navbar">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./services.html">Services</a>
-                <a href="./products.html">Products</a>
-            </nav>
-        </div>
-        <div class="login-section">
-            <i class="bi bi-cart"></i>
-            <a href="./login.html">Login</a>
-        </div>
-    </header>
+    </nav>
     <section class="hero2">
         <div class="hero2-content">
                 <h2 class="highlight">Who We Are</h2>
@@ -37,23 +58,23 @@
             <img src="./src/OIG2..png" alt="">
         </div>
     </section>
-    <section class="info2">
+    <section class="container info2">
             <h1 class="highlight">MEET THE PROVIDERS</h1>
-            <div class="info2-content">
-                <div class="card" style="width: 18rem;">
+            <div class="row info2-content">
+                <div class="card col-md-4" style="width: 18rem;">
                     <img src="./src/doc1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <p class="card-text2">“Quality patient care is my top priority. My goal is for patients to be comfortable in their own skin and confident with their treatment plans – regardless of where they are on their journey. Beauty is not always one size fits all – I strive to tailor every treatment plan to the individual.”
                     </p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-4" style="width: 18rem;">
                     <img src="./src/doc2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <p class="card-text2">“Among my top priorities is providing my patients with natural-looking results. I take the time to carefully listen to a person’s aesthetic goals and explain their options, both surgical and non-surgical. I strive to provide attractive surgical outcomes that naturally integrate with a person’s age, body type, and lifestyle.”</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-4"  style="width: 18rem;">
                     <img src="./src/doc3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <p class="card-text2">“My aim is to get to know your distinct vision of beauty, before creating an individualized treatment plan that unites you with your ideal outcome. From the most innovative surgical options to cutting-edge, minimally-invasive techniques, we will work together to restore your self-confidence and bring your aesthetic dreams to life!”</p>
@@ -112,45 +133,76 @@
                 nursing personnel in an intimate setting.</p>
         </div>
     </section>
-    <footer class="footer-info">
-        <div class="column">
-            <h1>Masculinique</h1>
-            <p class="sample">Stay Connected with us</p>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-instagram"></i>
-    
+    <footer class="footer-info pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 foot-logo">
+                <h1 class=" font-weight=bold">Masculinique</h1>
+                <p class="font-weight=bold ">Stay Connected with us</p>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold">Menu</h5>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Home</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">About</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Services</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Products</a>
+                  </p>
+              </div>
+      
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold">Get Help</h5>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">FAQ</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Shipping</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Return Policy</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Order Status</a>
+                  </p>
+              </div>
+              <div class="col-md-4 col-lg-3 ms-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold">Online Shop</h5>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Store</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Lazada</a>
+                  </p>
+                  <p>
+                      <a href="#" class="text-black" style="text-decoration: none;">Shopee</a>
+                  </p>
+              </div>
+              <hr class="row align-items-center">
+              <div class="row align-items-center">
+                  <div class="cupyright">
+                      <p>
+                          Copyright ©2024 All rights recerved by:
+                          <a href="#" style="text-decoration: none;">
+                          <strong class="copy">Masculinique</strong>
+                          </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
         </div>
-        <div class="column">
-            <h3>Menu</h3>
-            <ul style="list-style: none; padding-left: 0;">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h3>Get Help</h3>
-            <ul style="list-style: none; padding-left: 0;">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Return Policy</a></li>
-                <li><a href="#">Order Status</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h3>Online Shop</h3>
-            <p>Store</p>
-            <p>Lazada</p>
-            <p>Shopee</p>
-        </div>
-
-    
-</body>
-<footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>p
-</footer>
-</html>
+      
+      </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </body>
+      </html>
