@@ -301,6 +301,23 @@ body{
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/*-- SErvicces--*/
+.services-hero {
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-family: "comfortaa", sans-serif;
+    color: #25297D;
+    font-weight: 800;
+
+}
+
+.services-section {
+    background-color: #ffffff;
+    padding-bottom:  15%;
+}
+
 @media(max-width: 991px) {
     .sidebar{
         background-color: rgba(35, 22, 6, 0.282);
