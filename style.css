@@ -280,19 +280,53 @@ body{
         backdrop-filter: blur(10px);
     }
     .hero {
-        flex-direction: column; /* Change layout to column */
+        flex-direction: column; 
         margin-top: 150px;
       }
     
       .hero-content {
-        text-align: center; /* Center the content */
+        text-align: center; 
       }
     
       #carouselExampleSlidesOnly {
-        order: 2; /* Move the carousel below the content */
+        order: 2; 
       }
       .choose-image img {
         width: 500px;
         height: auto;
     }
+    .title-location h1 {
+        text-align: center;
+    }
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url('./src/location.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .location::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(100%); 
+        z-index: -1;
+    }
+    
+    .title-location, .dropdown, .btn {
+        position: relative;
+        z-index: 1;
+    }
+    
 }
