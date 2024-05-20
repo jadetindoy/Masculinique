@@ -320,8 +320,14 @@ body{
 
 @media(max-width: 991px) {
     .sidebar{
-        background-color: rgba(35, 22, 6, 0.282);
+        background-color: rgba(173, 166, 157, 0.282);
         backdrop-filter: blur(10px);
+    }
+    .offcanvas-body li a {
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "comfortaa", sans-serif;
+
     }
     .hero {
         flex-direction: column; 
