@@ -391,4 +391,9 @@ body{
         width: 400px;
         height: auto;
     }
+    .foot-logo h1 {
+        font-family: "comfortaa", sans-serif;
+        font-size: 22px;
+        color: #25297D;
+    }
 }
