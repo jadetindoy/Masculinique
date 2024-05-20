@@ -3,6 +3,7 @@
 body{
     color: black;
     background: linear-gradient(120deg, #DEF0F5 8.7%, #FDDEBA 113.57%);
+    
 }
 
 .offcanvas-body li a {
@@ -25,6 +26,10 @@ body{
 .navbar-toggler .bi-list {
     font-size: 1.5rem;
     color: rgb(0, 0, 0); 
+}
+.navbar-scrolled {
+    background-color: white !important;
+    transition: background-color 0.3s;
 }
 
 .hero {
