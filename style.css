@@ -38,10 +38,10 @@ body{
 }
 .hero2 {
     display: flex;
-    align-items: center; 
+    align-items: center;
     color: black;
-    padding: 10% ;
-    padding-top: 280px;
+    padding: 10%;
+    padding-top: 125px;
     padding-left: 180px;
     padding-bottom: 0px;
 }
@@ -62,12 +62,6 @@ body{
     margin-bottom: 5px;
 }
 
-.hero2-content h1 {
-    font-size: 48px;
-    margin-bottom: start;
-    margin-bottom: 5px;
-}
-
 .hero-content p {
     color: rgba(0, 0, 0, 0.67);
     font-size: 27px;
@@ -78,15 +72,6 @@ body{
     margin-bottom: 40px;
 }
 
-.hero2-content p {
-    color: rgba(0, 0, 0, 0.67);
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    margin-bottom: 40px;
-}
 .carousel {
     margin-top: 150px;;
 }
@@ -99,6 +84,16 @@ body{
 }
 
 .info {
+    display: flex;
+    align-items: center; 
+    background-color: white;
+    color: black;
+    padding: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0;
+}
+.info2 {
     display: flex;
     align-items: center; 
     background-color: white;
@@ -327,11 +322,26 @@ body{
         flex-direction: column; 
         margin-top: 150px;
       }
-    
+    .hero2{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        padding-left:   0%;
+        padding-right:  0%;
+    }
       .hero-content {
         text-align: center; 
-      }
-    
+    }
+    .hero2-content > h3,.hero2-content > h1, .hero2-content > p, .hero2-content > button{
+        width:50%;
+        word-wrap: break-word;
+        text-align: center;
+        margin:auto;
+        display: inherit;
+    }
+    .info2 > .content > .card{
+        width:70%;
+    }
       #carouselExampleSlidesOnly {
         order: 2; 
       }
