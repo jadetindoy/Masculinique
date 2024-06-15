@@ -194,25 +194,19 @@
   <div class="title-location">
     <h1>Check our nearest Location</h1>
   </div>
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      Location
-    </button>
-  
-    <ul class="dropdown-menu" aria-labelledby="locationDropdown">
-      <li><a class="dropdown-item" href="#">SM Mall of Asia</a></li>
-      <li><a class="dropdown-item" href="#">Ayala Center Cebu</a></li>
-      <li><a class="dropdown-item" href="#">SM Megamall</a></li>
-      <li><a class="dropdown-item" href="#">SM North EDSA</a></li>
-      <li><a class="dropdown-item" href="#">Greenbelt</a></li>
-      <li><a class="dropdown-item" href="#">Glorietta</a></li>
-      <li><a class="dropdown-item" href="#">Robinsons Galleria</a></li>
-      <li><a class="dropdown-item" href="#">Bonifacio High Street</a></li>
-      <li><a class="dropdown-item" href="#">Ayala Malls Manila Bay</a></li>
-      <li><a class="dropdown-item" href="#">SM City Cebu</a></li>
-    </ul>
-    <button type="button" class="btn btn-primary">Book</button>
-  </div>
+  <div id="map"></div>
+  <ul class="dropdown-menu" aria-labelledby="locationDropdown">
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM Mall of Asia', 14.531, 120.983)">SM Mall of Asia</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Ayala Center Cebu', 10.317, 123.905)">Ayala Center Cebu</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM Megamall', 14.585, 121.059)">SM Megamall</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM North EDSA', 14.655, 121.031)">SM North EDSA</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Greenbelt', 14.551, 121.024)">Greenbelt</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Glorietta', 14.551, 121.026)">Glorietta</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Robinsons Galleria', 14.592, 121.059)">Robinsons Galleria</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Bonifacio High Street', 14.549, 121.055)">Bonifacio High Street</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Ayala Malls Manila Bay', 14.524, 120.982)">Ayala Malls Manila Bay</a></li>
+      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM City Cebu', 10.317, 123.905)">SM City Cebu</a></li>
+  </ul>
 </section>
 <footer class="footer-info pt-5 pb-4">
   <div class="container text-center text-md-left">
@@ -294,7 +288,31 @@
                 navbar.classList.remove('navbar-scrolled');
             }
         });
+        let map;
+        let marker;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 14.5995, lng: 120.9842 }, // Centered on Manila
+                zoom: 10
+            });
+        }
+
+        function locateClinic(name, lat, lng) {
+            const location = { lat: lat, lng: lng };
+            if (marker) {
+                marker.setMap(null);
+            }
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: name
+            });
+            map.setCenter(location);
+            map.setZoom(15);
+        }
     </script>
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4uDzWwGPFYfUHT6oDokjU191tvojl-Pg&callback=initMap"></script>
+
 </body>
 </html>
