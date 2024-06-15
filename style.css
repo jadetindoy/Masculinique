@@ -426,4 +426,22 @@ body{
         font-size: 22px;
         color: #25297D;
     }
+    .notification{
+          padding: 15px 26px; !important
+          position: relative;  !important
+          display: inline-block; !important
+          border-radius: 2px; !important
+    }
+    .notification:hover {
+      background: red; !important
+    }
+    .notification .badge {
+      position: absolute; !important
+      top: -10px; !important
+      right: -10px; !important
+      padding: 5px 10px; !important
+      border-radius: 50%; !important
+      background-color: red; !important
+      color: black; !important
+    }
 }
