@@ -25,6 +25,29 @@ function handleSignUp() {
     const email = document.getElementById('signupEmail').value;
     const password = document.getElementById('signupPassword').value;
     localStorage.setItem('userEmail', email);
-    localStorage.setItem('userPassword', password); // Note: Do not store passwords like this in production.
-    window.location.href = './index.html'; // Redirect to the home page after sign up
+    localStorage.setItem('userPassword', password); 
+    window.location.href = './index.html'; 
 }
+// this is the are where the submit part send to 
+    function validateForm() {
+        const form = document.getElementById('bookForm');
+        if (form.checkValidity()) {
+            sendEmail();
+        } else {
+            form.classList.add('was-validated');
+        }
+    }
+
+    function sendEmail() {
+        const serviceID = 'service_ji5hkp9'; 
+        const templateID = 'template_7qu68we'; 
+
+        emailjs.sendForm(serviceID, templateID, '#bookForm')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your booking has been sent successfully!');
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert('Failed to send your booking. Please try again.');
+            });
+    }
