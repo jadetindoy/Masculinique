@@ -6,6 +6,9 @@ body{
     
 }
 
+#locationSelect {
+    margin-bottom: 50px;
+}
 .offcanvas-body li a {
     color: black;
 }
@@ -279,7 +282,7 @@ body{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0.53) 100%), url(./src/location.png) lightgray 0px -945px / 100% 293.173% no-repeat;
 }
 .title-location {
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 }
 .title-location h1 {
     font-family: "comfortaa", sans-serif;

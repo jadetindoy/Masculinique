@@ -51,3 +51,5 @@ function handleSignUp() {
                 alert('Failed to send your booking. Please try again.');
             });
     }
+
+    

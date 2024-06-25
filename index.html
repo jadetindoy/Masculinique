@@ -13,8 +13,8 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init("frf10DnWIK62YQvXJ"); // Replace with your EmailJS user ID
-    })();
+        emailjs.init("frf10DnWIK62YQvXJ"); 
+    })
 </script>
 
     
@@ -113,7 +113,7 @@
         </div>
     </section>
     <section class="info">
-      <div class="container text-center">
+    <div class="container text-center">
         <div class="row align-items-start">
             <div class="col info-content">
                 <h1>Masculinique</h1>
@@ -123,28 +123,28 @@
                 <img src="./src/infoimage.jpg" alt="">
             </div>
         </div>
-      </div>>
+    </div>>
     </section>
     <section class="approach">
-      <div class="container text-center"> 
+<div class="container text-center"> 
         <div class="row align-items-start">
-          <div class="col approach-image">
-              <img src="./src/file.png" alt="">
-          </div>
-          <div class="col approach-content">
-              <h1>Our Approach</h1>
-              <p>Masculinique is not just a clinic; it's a sanctuary 
-                  where men can embrace their individuality and 
-                  enhance their natural features with precision and 
-                  care. We understand the unique needs and desires 
-                  of our male clientele, and our team of expert clinicians
-                  is dedicated to delivering personalized solutions that
-                  exceed expectations.</p>
-          </div>
+        <div class="col approach-image">
+            <img src="./src/file.png" alt="">
         </div>
-      </div>
-  </section>
-  <section class="image-section">
+<div class="col approach-content">
+            <h1>Our Approach</h1>
+            <p>Masculinique is not just a clinic; it's a sanctuary 
+                where men can embrace their individuality and 
+                enhance their natural features with precision and 
+                care. We understand the unique needs and desires 
+                of our male clientele, and our team of expert clinicians
+                is dedicated to delivering personalized solutions that
+                exceed expectations.</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="image-section">
     <div class="services-heading">
         <h1>Our Services</h1>
     </div>
@@ -181,11 +181,11 @@
     </div>
 </section>
 <section class="choose">
-  <div class="container text-center"> 
-    <div class="row align-items-start">
-      <div class="col choose-image">
-          <img src="./src/OIG1.png" alt="choosemodel">
-      </div>
+<div class="container text-center"> 
+<div class="row align-items-start">
+    <div class="col choose-image">
+        <img src="./src/OIG1.png" alt="choosemodel">
+    </div>
         <div class="col choose-content">
             <h1>Why Choose Masculinique?</h1>
             <p>At Masculinique, our highly skilled team of clinicians brings years of 
@@ -204,31 +204,36 @@
   <div class="title-location">
     <h1>Check our nearest Location</h1>
   </div>
-  <div id="map"></div>
-  <ul class="dropdown-menu" aria-labelledby="locationDropdown">
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM Mall of Asia', 14.531, 120.983)">SM Mall of Asia</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Ayala Center Cebu', 10.317, 123.905)">Ayala Center Cebu</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM Megamall', 14.585, 121.059)">SM Megamall</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM North EDSA', 14.655, 121.031)">SM North EDSA</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Greenbelt', 14.551, 121.024)">Greenbelt</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Glorietta', 14.551, 121.026)">Glorietta</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Robinsons Galleria', 14.592, 121.059)">Robinsons Galleria</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Bonifacio High Street', 14.549, 121.055)">Bonifacio High Street</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at Ayala Malls Manila Bay', 14.524, 120.982)">Ayala Malls Manila Bay</a></li>
-      <li><a class="dropdown-item" href="#" onclick="locateClinic('Masculinique Clinic at SM City Cebu', 10.317, 123.905)">SM City Cebu</a></li>
-  </ul>
+
+<!-- Location -->
+
+<div class="container mt-5">
+    <div class="form-group">
+    <select id="locationSelect" class="form-control">
+        <option data-lat="14.5352" data-lng="120.9822">
+            Masculinique (Mall of Asia)
+        </option>
+        <option data-lat="14.3038" data-lng="120.9586">SM Dasmarinas</option>
+        <option data-lat="14.6563" data-lng="121.0309">Trinoma</option>
+        <option data-lat="10.3173" data-lng="123.9052">SM Cebu</option>
+        <option data-lat="15.4786" data-lng="120.5976">SM Tarlac</option>
+    </select>
+    </div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+</div>
+
 </section>
 <footer class="footer-info pt-5 pb-4">
-  <div class="container text-center text-md-left">
+<div class="container text-center text-md-left">
     <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 foot-logo">
-          <h1 class=" font-weight=bold">Masculinique</h1>
-          <p class="font-weight=bold ">Stay Connected with us</p>
-          <i class="bi bi-youtube"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-twitter-x"></i>
-          <i class="bi bi-tiktok"></i>
-          <i class="bi bi-instagram"></i>
+            <h1 class=" font-weight=bold">Masculinique</h1>
+            <p class="font-weight=bold ">Stay Connected with us</p>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-tiktok"></i>
+            <i class="bi bi-instagram"></i>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold">Menu</h5>
@@ -285,7 +290,7 @@
             </div>
         </div>
     </div>
-  </div>
+</div>
 
 </footer>
 <script src="auth.js"></script> 
@@ -299,29 +304,43 @@
                 navbar.classList.remove('navbar-scrolled');
             }
         });
-        let map;
-        let marker;
+    let map;
+    let marker;
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 14.5995, lng: 120.9842 }, // Centered on Manila
-                zoom: 10
-            });
-        }
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: 14.5995, lng: 120.9842 }, // Centered on Manila
+        zoom: 10
+        });
+    }
 
-        function locateClinic(name, lat, lng) {
-            const location = { lat: lat, lng: lng };
-            if (marker) {
-                marker.setMap(null);
-            }
-            marker = new google.maps.Marker({
-                position: location,
-                map: map,
-                title: name
-            });
-            map.setCenter(location);
-            map.setZoom(15);
+    function locateClinic(name, lat, lng) {
+        const location = { lat: lat, lng: lng };
+        if (marker) {
+        marker.setMap(null);
         }
+        marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: name
+        });
+        map.setCenter(location);
+        map.setZoom(15);
+    }
+
+    function onLocationChange() {
+        const select = document.getElementById('locationSelect');
+        const selectedOption = select.options[select.selectedIndex];
+        const name = selectedOption.text;
+        const lat = parseFloat(selectedOption.getAttribute('data-lat'));
+        const lng = parseFloat(selectedOption.getAttribute('data-lng'));
+        locateClinic(name, lat, lng);
+    }
+
+    window.onload = function() {
+        initMap();
+        document.getElementById('locationSelect').addEventListener('change', onLocationChange);
+    };
         
     </script>
     <script src="script.js"> </script>
