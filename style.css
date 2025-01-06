@@ -263,6 +263,23 @@ body{
     font-size: 48px;
     padding-bottom: 5px;
 }
+ .hover-effect:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .rating {
+        font-size: 1.2em;
+    }
+
+    .badge {
+        font-size: 0.9em;
+    }
 .choose-content p {
     color: rgba(0, 0, 0, 0.66);
     font-size: 20px;
